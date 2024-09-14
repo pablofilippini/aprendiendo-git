@@ -5,7 +5,10 @@ public class Main {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
         System.out.printf("bienvenido al sistema");
-
-        int var= 7/0;
+        try {
+            int var= 7/0;
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
         }
     }
